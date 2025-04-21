@@ -7,9 +7,10 @@ namespace wk1test
         [Fact]
         public void Assignment_Should_Have_A_Title()
         {
-            var assignment = new Assignment();
+            string Title = "New Title";
+            var assignment = new Assignment(Title);
 
-            Assert.NotNull(assignment.Title);
+            Assert.NotNull(assignment._title);
         }
     }
 }
